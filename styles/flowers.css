@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* universal style */
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 40px;
+}
+/* shared style */
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.display-flex{
+    display: flex;
+}
+.text-gray{
+    color: rgb(107, 114, 128);
+}
+.text-black{
+    color: rgb(17, 17, 17);
+}
+.text-orange{
+    color: #E95A08;
+}
+.text-white{
+   color: #FFFFFF; 
+}
+.bg-light-blue{
+    background-color: rgb(245, 248, 255);
+}
+
+
+/* Navber styles */
+.logo{
+    width: 135px;
+    height: 70px;
+    margin: 0px 10px;
+    position: static;
+}
+.navbar{
+    justify-content: space-between;
+}
+.nav-item{
+    list-style: none;
+    margin: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 400;
+}
+
+ /* banner style */
+ .banner{
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+ }
+ .banner h6{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 13px 0;
+ }
+ .banner p{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(107, 114, 128);
+    width: 570px;
+    gap: 13;
+ }
+ /* plant related style */
+.plant-content{
+    max-width: 850px;
+    margin: 0 auto;
+}
+/* plant cards style */
+.btn{
+    background-color: #E95A08;
+    padding: 15px 25px;
+    font-weight: 400;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 270px;
+}
+
+.plant-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+.plant-card .card img{
+    height: 332px;
+    width: 270px;
+}
+.plant-card .card h5{
+    margin: 20px 0px;
+    font-size: 22px;
+font-weight: 500;
+}
+
+/* plant lover style */
+.features{
+    gap: 100px;
+}
+.features h6{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 13px 0;
+}
+.features img{
+    width: 540px;
+    height: 580px;
+}
+.trusted-badge{
+    position: absolute;
+width: 286px;
+height: 286px;
+left: 497px;
+top: 2072px;
+
+    
+}
+
+/* deals style */
+.Deals h6{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 13px 0;
+}
+.Deals p{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(107, 114, 128);
+    width: 570px;
+    gap: 13;
+ }
+
+ /* subscribe style */
+ 
+ .subscribe-form h6{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 13px 0;
+ }
+ .subscribe-form-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    
+ }
+ 
+img{
+    height: 100%;
+    width: 100%;
+}
+.coloum{
+    display: grid;
+    gap: 10px;
+     
+
+}
+
+
+/* footer section style */
+.footer p{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(107, 114, 128);
+    width: 570px;
+    gap: 13;
+}
+
+.container2{
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    
+}
+.container3{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+}
+
+.footer{
+    column-gap: 200px;
+}
+/* media query for mobile */
+@media screen and (max-width:768px) {
+
+    .navbar, .nav-link{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .plant-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features{
+        flex-direction: column;
+    }
+    .Deals{
+        flex-direction: column;
+    }
+    .coloum{
+        flex-direction: column
+    }
+    .row{
+        flex-direction: column
+    }
+    .container3{
+        flex-direction: column
+    }
+    .footer{
+        flex-direction: column;
+        
+    }
+}
